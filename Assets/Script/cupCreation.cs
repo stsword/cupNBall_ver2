@@ -41,7 +41,7 @@ public class cupCreation : MonoBehaviour
         cup.transform.localScale=Vector3.one* randScale;
         cup.transform.position=new Vector3(finalPosX,0, 0);
         //Debug.Log(cup.transform.localScale);
-        Physics.gravity = new Vector3(0, -20, 0);
+        Physics.gravity = new Vector3(0, gravity, 0);
 
 
 

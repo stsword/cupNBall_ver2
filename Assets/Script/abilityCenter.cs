@@ -6,17 +6,19 @@ public class abilityCenter : MonoBehaviour
 {
     public GameObject ball;
    
-    public void InertBoost()
+    public void leftBoost()
     {
 
         Rigidbody rg = ball.GetComponent<Rigidbody>();
-        rg.AddForce(rg.velocity.normalized* 500);
+        rg.velocity = new Vector3(-10, 0, 0);
+        //rg.AddForce(new Vector3(-5000, 0, 0));
     }
-    public void reversBoost()
+    public void rightBoost()
     {
 
         Rigidbody rg = ball.GetComponent<Rigidbody>();
-        rg.AddForce(-rg.velocity.normalized * 500);
+        rg.velocity = new Vector3(10, 0, 0);
+       // rg.AddForce(new Vector3 (5000,0,0));
     }
    
     

@@ -5,11 +5,21 @@ using UnityEngine;
 public class contactCheck : MonoBehaviour
 {
 
-    public GameObject spark;
+    public GameObject spark,controlPan, controlPanDum;
     GameObject oldPart;
-   void OnCollisionEnter(Collision inCol)
+   
+     void Start()
+    {
+      
+    }
+    void OnCollisionEnter(Collision inCol)
 
     {
+        if (inCol.gameObject.tag =="floor")
+        {
+            controlPan.SetActive(true);
+            controlPanDum.SetActive(false);
+                }
         if (oldPart != null)
 
         {
