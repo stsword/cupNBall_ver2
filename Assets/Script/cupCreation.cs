@@ -67,11 +67,12 @@ public class cupCreation : MonoBehaviour
     public void cupReNew()
     {
 
-        float randScale, finalPosX;
+        float randScale, finalPosX,sign;
+        sign = Mathf.Sign( Random.Range(-1f, 1f));
         randScale = Random.Range(0.25f, 0.30f);
         finalPosX = Random.Range(((6 - (randScale * 10)) * -0.5f), ((6 - (randScale * 10)) * 0.5f));
         //cup.SetActive(true);
-        cup.transform.localScale = Vector3.one * randScale;
+        cup.transform.localScale = new Vector3(sign,1,1)* randScale;
         cup.transform.position = new Vector3(finalPosX, 0, 0);
     }
 

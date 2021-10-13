@@ -29,7 +29,7 @@ public class playSFXonHit : MonoBehaviour
 
     {
 
-        AudioSource.PlayClipAtPoint(_spawnClip, transform.position, 10f);
+        AudioSource.PlayClipAtPoint(_spawnClip, transform.position, 20f);
 
     }
 }

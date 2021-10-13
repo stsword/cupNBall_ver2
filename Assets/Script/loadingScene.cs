@@ -17,7 +17,7 @@ public class loadingScene : MonoBehaviour
 
     IEnumerator loadPro()
     {
-        AsyncOperation checkPro = SceneManager.LoadSceneAsync("gamePlay");
+        AsyncOperation checkPro = SceneManager.LoadSceneAsync("gamePlay_2");
 
         while (checkPro.progress < 1)
             {
