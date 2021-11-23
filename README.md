@@ -1,7 +1,7 @@
 ## Table of contents
-* [General info](#general info)
+* [General info](#general-info)
 * [Technologies](#technologies)
-## general info
+## general-info
 Name : cup and ball game
 This is the final project when I studying in game design 
 ## technologies
