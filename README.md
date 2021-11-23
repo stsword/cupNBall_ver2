@@ -3,7 +3,9 @@
 * [Technologies](#technologies)
 ## general-info
 Name : cup and ball game  
-This is the final project when I studying in game design 
+This is the final project when I studying in game design  
+This is a casual game which you need to shot the ball into the cup(the bin which collect energy ball)  
+
 ## technologies
 This project is created with 
 * Unity 2019.4.29f1
