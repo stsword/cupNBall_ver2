@@ -1,5 +1,5 @@
 ## general info
-cup and ball game
+Name : cup and ball game
 This is the final project when I studying in game design 
 ## Technologies
 This project is created with 
