@@ -2,7 +2,7 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 ## general-info
-Name : cup and ball game
+Name : cup and ball game  
 This is the final project when I studying in game design 
 ## technologies
 This project is created with 
