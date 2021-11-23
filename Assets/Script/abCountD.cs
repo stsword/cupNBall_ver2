@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+/*
+Load  botton image and reload the ability with time 
+*/
 public class abCountD : MonoBehaviour
 {
     public float CD ;
@@ -12,6 +14,8 @@ public class abCountD : MonoBehaviour
 
    public void Start()
     {
+        //Load the botton image
+
         tmpCD = CD;
         cdImage = gameObject.GetComponent<Image>();
 
@@ -23,7 +27,7 @@ public class abCountD : MonoBehaviour
    
     void Update()
     {
-       
+       // count down with deltaTime
        if (tmpCD >= 0)
         {
             tmpCD-= Time.deltaTime;

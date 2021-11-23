@@ -9,7 +9,9 @@ using TMPro;
 
 public class countDownTest : MonoBehaviour
 {
+    //total value of the enegry bar
     public int _CDT;
+    
     public static float countdownTime;
     public Slider progBarSlider;
     public Text timerText;
@@ -24,10 +26,14 @@ public class countDownTest : MonoBehaviour
     Image fillImage;
      void Start()
     {
+        //load the energry count down bar
         fillRect = progBarSlider.GetComponent<Slider>().fillRect;
         fillImage = fillRect.GetComponent<Image>();
+        //intialize the current time when game start
         holdTime = 0;
+         //intialize the total value of the energy bar
         countdownTime = _CDT;
+        //Load highest score
         string saveFile = Application.dataPath + "/highScore.json";
         if (File.Exists(saveFile))
         {
@@ -36,10 +42,11 @@ public class countDownTest : MonoBehaviour
         highestScore = JsonUtility.FromJson<scoreData>(fileContents);
            
         }
+
         StartCoroutine(leveltimer());
 
-       
         StartCoroutine(CountdownToStart());
+
         StartCoroutine(timer());
 
     }
@@ -47,7 +54,6 @@ public class countDownTest : MonoBehaviour
     // coroutine to show current time of plying
     IEnumerator timer()
     {
-
 
         while (true)
         {
@@ -63,7 +69,7 @@ public class countDownTest : MonoBehaviour
        
     }
 
-    // coroutine control time to level up
+    // coroutine control level up when time goes
     IEnumerator leveltimer()
     {
         while (true)
@@ -74,7 +80,7 @@ public class countDownTest : MonoBehaviour
 
      
     }
-    // control level up GUI
+    // control the display of level up
     public void setLevelDis()
     {
         var tmpTex = levelVfx.GetComponent<TextMeshProUGUI>();

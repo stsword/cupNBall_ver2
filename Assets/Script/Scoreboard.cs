@@ -6,11 +6,8 @@ using UnityEngine.UI;
 using System.IO;
 public class Scoreboard : MonoBehaviour
 {
-
-
     public TextMeshProUGUI score,highestScore;
     public static Scoreboard _instance;
-
     public static int totalScore = 0;
     scoreData readScore;
 
@@ -25,11 +22,12 @@ public class Scoreboard : MonoBehaviour
 
     void Start()
     {
+        // read the highest score saved
+
         string saveFile = Application.dataPath + "/highScore.json";
         if (File.Exists(saveFile))
         {
-           
-            string fileContents = File.ReadAllText(saveFile);
+             string fileContents = File.ReadAllText(saveFile);
             readScore = JsonUtility.FromJson<scoreData>(fileContents);
         }
         updateScore();

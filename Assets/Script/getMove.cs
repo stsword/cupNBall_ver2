@@ -4,17 +4,26 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+//class to handle the animation the info text
+
+
 public class getMove : MonoBehaviour
 {
-    
+    //choice for the moving dir
     public enum dir  {X,Y,Z}
+
+    //on-off for translat scale rotation and fading
     public bool tran, scale, rot, fade;
+
     public dir movDir=dir.X;
+    
+    //intialize the duration of the info text
     public float timeLeft;
+
     public Vector3 startScale, endScale;
     TextMeshProUGUI objMat;
+
     public void active()
-        
     {
         gameObject.SetActive(true);
         if (tran)
@@ -32,13 +41,8 @@ public class getMove : MonoBehaviour
         {
             StartCoroutine(fadeStart());
         }
-      
-   
-     
-
-       
-     
     }
+
     public void move()
     {
        

@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//class control SFX play
 public class playSFXonHit : MonoBehaviour
 {
     
@@ -17,13 +17,13 @@ public class playSFXonHit : MonoBehaviour
         }
 
     }
-
+    // play sfx when collide
     void OnCollisionEnter()
     {
         AudioSource.PlayClipAtPoint(_audioClip,transform.position, 05f);
-       
-       
     }
+
+    //play sfx when new ball spawn
 
     public void spawnS()
 

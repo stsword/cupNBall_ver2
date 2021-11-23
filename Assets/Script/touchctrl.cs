@@ -3,19 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-//method to control the input handle 
+//class  control the virtual joystick
 public class touchctrl : MonoBehaviour
 {
     public static Vector3 XYinput;
-   // public delegate void TouchStateDelegate(bool touchPresent);
-   // bool touchPre;
+ 
     Quaternion rot;
 
 
     [SerializeField]
     GameObject indic, handle,dum;
-    bool checkTouch=true;
-    //calculate the vector when handle being drag
+   // bool checkTouch=true;
+    //calculate the vector that the ball go when joystick being drag
    
     public void dragCallback(Vector2 inVal)
     {
@@ -27,7 +26,7 @@ public class touchctrl : MonoBehaviour
        
       
     }
-    //recoil of the handle 
+    //set the joystick back to the center
     public void backToOrg()
     {
         dum.SetActive(true);

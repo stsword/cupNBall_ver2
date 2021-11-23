@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//class control the flicking of the main light
+
 public class lightFlick : MonoBehaviour
 {
     public float baseIntensity, flickAmp,freq;
     Light _light;
-   //control the flicking of the main light
+
      void Start()
     {
         _light = gameObject.GetComponent<Light>();

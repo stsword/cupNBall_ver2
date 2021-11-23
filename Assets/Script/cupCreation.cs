@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
- using UnityEngine.SceneManagement;
-
+using UnityEngine.SceneManagement;
+//class to handle the re-new of the cup
 
 public class cupCreation : MonoBehaviour
 
@@ -31,6 +31,9 @@ public class cupCreation : MonoBehaviour
     }
     void Start()
     {
+        //intialize the cup and ball when game first start
+
+
         //Debug.Log(Application.persistentDataPath);
         float randScale,finalPosX;
         ballRig = ball.GetComponent<Rigidbody>();
@@ -51,9 +54,6 @@ public class cupCreation : MonoBehaviour
     void Update()
     {
         //Vector3 screenPos = Input.mousePosition;
-
-
-
 
         if (Input.GetMouseButton(0))
         {
@@ -105,7 +105,7 @@ public class cupCreation : MonoBehaviour
         Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
     }
 
-    //set the charge arrow to the center of the ball
+    //set the arrow indicator to the center of the ball
     public void setPointerPos()
     
     {

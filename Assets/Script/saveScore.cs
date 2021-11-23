@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-// process of writing a .json 
+//  writing a .json 
 public class saveScore : MonoBehaviour
 {
      public static scoreData _scoreDate = new scoreData();
